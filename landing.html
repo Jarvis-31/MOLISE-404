@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MØLISE — 404 Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Bagliore che segue il cursore solo su desktop. -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navbar fissa con navigazione principale e CTA rapida verso WhatsApp. -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">
+        <span class="logo-text">MØLISE</span>
+        <span class="logo-badge">404</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#dicerie">Dicerie</a></li>
+        <li><a href="#prodotti">Prodotti</a></li>
+        <li><a href="#province">Province</a></li>
+        <li><a href="#missione">La Missione</a></li>
+        <li><a href="#ordina" class="nav-cta">Ordina su WhatsApp</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero iniziale: identità del brand, payoff e call to action principali. -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="reveal reveal-delay-1">
+        <span class="hero-title-main"><span class="stroke-text">MØ</span>LISE</span>
+        <span class="hero-tag">
+          <span class="pulse"></span>
+          ERROR 404
+        </span>
+        <span class="orange hero-not-found">NOT FOUND</span>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">— la regione che non esiste —</p>
+      <p class="hero-desc reveal reveal-delay-3">
+        T-shirt ispirate alle dicerie e ai miti della regione più misteriosa d'Italia.
+        Perché il Molise non esiste, ma il suo stile sì.
+      </p>
+      <div class="hero-ctas reveal reveal-delay-4">
+        <a href="#prodotti" class="btn-primary">
+          Scopri la Collezione
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+          </svg>
+        </a>
+        <a href="#missione" class="btn-secondary">La Nostra Storia</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      scroll
+    </div>
+  </section>
+
+  <!-- Fascia scorrevole: ogni voce resta centrata tra due segni arancioni lineari. -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>"IL MOLISE NON ESISTE"</span>
+      <span>CAMPOBASSO</span>
+      <span>ISERNIA</span>
+      <span>TERMOLI</span>
+      <span>REGIONE FANTASMA</span>
+      <span>404 NOT FOUND</span>
+      <span>MADE IN NOWHERE</span>
+      <span>LA REGIONE CHE NON C'È</span>
+      <span>"IL MOLISE NON ESISTE"</span>
+      <span>CAMPOBASSO</span>
+      <span>ISERNIA</span>
+      <span>TERMOLI</span>
+      <span>REGIONE FANTASMA</span>
+      <span>404 NOT FOUND</span>
+      <span>MADE IN NOWHERE</span>
+      <span>LA REGIONE CHE NON C'È</span>
+    </div>
+  </div>
+
+  <!-- Sezione editoriale dedicata alle dicerie sul Molise. -->
+  <section class="section" id="dicerie">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Le Dicerie</p>
+        <h2 class="section-title">Cose che si dicono<br>sul <span class="orange">Molise</span></h2>
+        <p class="section-desc">Da generazioni, il Molise alimenta leggende metropolitane che noi trasformiamo in arte da indossare.</p>
+      </div>
+      <div class="dicerie-grid">
+        <div class="diceria-card reveal">
+          <div class="diceria-num">001</div>
+          <p class="diceria-text">"Il Molise non esiste, è un'invenzione del governo."</p>
+          <p class="diceria-origin">— Detto Popolare Nazionale</p>
+        </div>
+        <div class="diceria-card reveal reveal-delay-1">
+          <div class="diceria-num">002</div>
+          <p class="diceria-text">"In Molise ci sono più pecore che persone."</p>
+          <p class="diceria-origin">— Proverbio Locale</p>
+        </div>
+        <div class="diceria-card reveal reveal-delay-2">
+          <div class="diceria-num">003</div>
+          <p class="diceria-text">"Il Molise è come il Wi-Fi: tutti ne parlano ma nessuno l'ha mai visto."</p>
+          <p class="diceria-origin">— Internet, Sempre</p>
+        </div>
+        <div class="diceria-card reveal reveal-delay-1">
+          <div class="diceria-num">004</div>
+          <p class="diceria-text">"Se cerchi il Molise su Google Maps, ti risponde 'Intendevi: Puglia?'"</p>
+          <p class="diceria-origin">— Leggenda Digitale</p>
+        </div>
+        <div class="diceria-card reveal reveal-delay-2">
+          <div class="diceria-num">005</div>
+          <p class="diceria-text">"Conosci qualcuno del Molise? Esatto, nemmeno io."</p>
+          <p class="diceria-origin">— Tutti, Ovunque</p>
+        </div>
+        <div class="diceria-card reveal reveal-delay-3">
+          <div class="diceria-num">006</div>
+          <p class="diceria-text">"Il Molise è la regione in modalità aereo."</p>
+          <p class="diceria-origin">— Social Media</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione prodotti: niente immagini, solo box testuali con fondo coerente al colore maglia. -->
+  <section class="products-section section" id="prodotti">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Collezione</p>
+        <h2 class="section-title">Indossa l'<span class="orange">Inesistenza</span></h2>
+        <p class="section-desc">T-shirt premium a tinta unita, nero o bianco. Ogni design racconta una diceria, un mito, un pezzo di quel Molise che (non) esiste.</p>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carousel">
+        <div class="product-card reveal">
+          <div class="product-visual product-visual-dark">
+            <div class="product-visual-copy">
+              <span class="product-visual-brand">MØLISE</span>
+              <span class="product-visual-title">404 NOT FOUND</span>
+              <span class="product-visual-note">T-shirt nera</span>
+            </div>
+            <span class="badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <p class="product-name">MØLISE — 404 Not Found</p>
+            <p class="product-variant">T-Shirt Nera · 100% Cotone</p>
+            <div class="product-bottom">
+              <span class="product-price">€34.90</span>
+              <button type="button" class="product-action" data-whatsapp="Ciao! Vorrei ordinare la t-shirt MØLISE 404 Nera">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-visual product-visual-dark">
+            <div class="product-visual-copy">
+              <span class="product-visual-brand">TERMOLI</span>
+              <span class="product-visual-title">42.0087° N | 15.0605° E</span>
+              <span class="product-visual-note">Greenwich del Mare Adriatico</span>
+            </div>
+            <span class="badge">Novità</span>
+          </div>
+          <div class="product-info">
+            <p class="product-name">TERMOLI — Coordinate</p>
+            <p class="product-variant">T-Shirt Nera · "Greenwich" del Mare Adriatico</p>
+            <div class="product-bottom">
+              <span class="product-price">€34.90</span>
+              <button type="button" class="product-action" data-whatsapp="Ciao! Vorrei ordinare la t-shirt TERMOLI Coordinate">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-visual product-visual-light">
+            <div class="product-visual-copy">
+              <span class="product-visual-brand">MØLISE</span>
+              <span class="product-visual-title">REGIONE FANTASMA</span>
+              <span class="product-visual-note">T-shirt bianca</span>
+            </div>
+            <span class="badge">Limited</span>
+          </div>
+          <div class="product-info">
+            <p class="product-name">MØLISE — Regione Fantasma</p>
+            <p class="product-variant">T-Shirt Bianca · 100% Cotone</p>
+            <div class="product-bottom">
+              <span class="product-price">€34.90</span>
+              <button type="button" class="product-action" data-whatsapp="Ciao! Vorrei ordinare la t-shirt Regione Fantasma">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-visual product-visual-dark">
+            <div class="product-visual-copy">
+              <span class="product-visual-brand">ISERNIA</span>
+              <span class="product-visual-title">COORDINATE</span>
+              <span class="product-visual-note">41.5931° N | 14.2335° E</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">ISERNIA — Coordinate</p>
+            <p class="product-variant">T-Shirt Nera · La Provincia Segreta</p>
+            <div class="product-bottom">
+              <span class="product-price">€34.90</span>
+              <button type="button" class="product-action" data-whatsapp="Ciao! Vorrei ordinare la t-shirt ISERNIA Coordinate">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-4">
+          <div class="product-visual product-visual-light">
+            <div class="product-visual-copy">
+              <span class="product-visual-brand">CAMPOBASSO</span>
+              <span class="product-visual-title">CAPOLUOGO</span>
+              <span class="product-visual-note">Immaginario</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">CAMPOBASSO — Capoluogo</p>
+            <p class="product-variant">T-Shirt Bianca · La Capitale del Nulla</p>
+            <div class="product-bottom">
+              <span class="product-price">€34.90</span>
+              <button type="button" class="product-action" data-whatsapp="Ciao! Vorrei ordinare la t-shirt CAMPOBASSO">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button type="button" class="carousel-btn" data-carousel-direction="-1">←</button>
+        <button type="button" class="carousel-btn" data-carousel-direction="1">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tre punti rapidi per spiegare qualità prodotto e servizio. -->
+  <section class="section section-no-top">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">◈</div>
+          <h3 class="feature-title">100% Cotone Premium</h3>
+          <p class="feature-desc">Tessuto pesante 220g/m² che non si deforma. Morbido come la nebbia del Matese.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">◎</div>
+          <h3 class="feature-title">Stampa HD</h3>
+          <p class="feature-desc">Serigrafia di alta qualità che resiste a infiniti lavaggi. Come il mistero del Molise.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">⬡</div>
+          <h3 class="feature-title">Spedizione Ovunque</h3>
+          <p class="feature-desc">Consegniamo in tutta Italia. Sì, anche in Molise. Se lo troviamo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione narrativa sulle due province molisane. -->
+  <section class="section province-section" id="province">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Le Province</p>
+        <h2 class="section-title">Due province.<br><span class="orange">Zero</span> prove che esistano.</h2>
+        <p class="section-desc">Il Molise ha solo due province. Il che rende tutto ancora più sospetto.</p>
+      </div>
+      <div class="province-grid">
+        <div class="province-card reveal">
+          <p class="province-coords">41.5602° N — 14.6627° E</p>
+          <h3 class="province-name">Campobasso</h3>
+          <p class="province-desc">Il capoluogo fantasma. Dicono sia una città, ma nessuno ha mai preso un volo per Campobasso. Coincidenza? Noi non crediamo.</p>
+          <div class="province-line"></div>
+        </div>
+        <div class="province-card reveal reveal-delay-1">
+          <p class="province-coords">41.5931° N — 14.2335° E</p>
+          <h3 class="province-name">Isernia</h3>
+          <p class="province-desc">La seconda provincia. Perché quando inventi una regione, devi inventare almeno due province per renderla credibile.</p>
+          <div class="province-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missione del brand e contatori con piccoli dati simbolici. -->
+  <section class="section mission-section" id="missione">
+    <div class="container">
+      <div class="section-header section-header-centered">
+        <p class="section-label reveal">// La Missione</p>
+      </div>
+      <p class="mission-big reveal">
+        Trasformiamo le <strong class="orange">dicerie</strong> in design, i <strong>miti</strong> in moda, e il <strong class="orange">Molise</strong> in qualcosa che tutti vogliono indossare.
+      </p>
+      <p class="reveal mission-copy">
+        MØLISE 404 nasce per far conoscere una regione che il mondo ha deciso di ignorare.
+        Lo facciamo con ironia, design minimale e un pizzico di orgoglio molisano.
+        Ogni t-shirt è un atto di resistenza culturale, con stile.
+      </p>
+      <div class="stats-row reveal">
+        <div class="stat">
+          <p class="stat-num"><span class="counter" data-target="2">0</span></p>
+          <p class="stat-label">Province</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num"><span class="counter" data-target="136">0</span></p>
+          <p class="stat-label">Comuni</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num"><span class="counter" data-target="0">0</span></p>
+          <p class="stat-label">Prove che esista</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num">∞</p>
+          <p class="stat-label">Dicerie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chiusura commerciale della pagina con CTA forte verso WhatsApp. -->
+  <section class="section cta-section" id="ordina">
+    <div class="container cta-content">
+      <p class="section-label reveal">// Ordina Ora</p>
+      <h2 class="cta-title reveal reveal-delay-1">
+        Pronto a indossare<br>l'<span class="orange">inesistenza</span>?
+      </h2>
+      <p class="cta-desc reveal reveal-delay-2">
+        Ordina direttamente su WhatsApp. Scrivici il modello, la taglia e ti rispondiamo in un lampo. Più veloce di trovare il Molise su una mappa.
+      </p>
+      <a href="https://wa.me/393296687552?text=Ciao!%20Vorrei%20ordinare%20una%20t-shirt%20MØLISE%20404!" class="whatsapp-btn reveal reveal-delay-3" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+        Ordina su WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer con firma del progetto e link rapidi esterni. -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 <span class="orange">MØLISE 404</span> — Not Found, ma sempre di tendenza.</p>
+      <div class="footer-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="#ordina">Contatti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
