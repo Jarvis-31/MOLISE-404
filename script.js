@@ -10,6 +10,7 @@ const mobileToggle = document.getElementById("mobileToggle");
 const navLinks = document.getElementById("navLinks");
 const cursorGlow = document.getElementById("cursorGlow");
 const carousel = document.getElementById("carousel");
+const carouselCards = carousel ? Array.from(carousel.querySelectorAll(".product-card")) : [];
 const revealElements = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll(".counter");
 
@@ -69,8 +70,39 @@ function scrollCarousel(direction) {
     return;
   }
 
-  const cardWidth = firstCard.offsetWidth + 24;
+  const gap = Number.parseFloat(window.getComputedStyle(carousel).gap || "0");
+  const cardWidth = firstCard.offsetWidth + gap;
   carousel.scrollBy({ left: cardWidth * direction, behavior: "smooth" });
+}
+
+// Tiene in evidenza la card più vicina al centro del carousel.
+// In questo modo, soprattutto su touch, si capisce subito quale box
+// è quello "attivo" durante lo scorrimento orizzontale.
+function updateActiveCarouselCard() {
+  if (!carousel || carouselCards.length === 0) {
+    return;
+  }
+
+  const carouselRect = carousel.getBoundingClientRect();
+  const carouselCenter = carouselRect.left + (carouselRect.width / 2);
+
+  let activeCard = carouselCards[0];
+  let minDistance = Number.POSITIVE_INFINITY;
+
+  carouselCards.forEach((card) => {
+    const cardRect = card.getBoundingClientRect();
+    const cardCenter = cardRect.left + (cardRect.width / 2);
+    const distance = Math.abs(carouselCenter - cardCenter);
+
+    if (distance < minDistance) {
+      minDistance = distance;
+      activeCard = card;
+    }
+  });
+
+  carouselCards.forEach((card) => {
+    card.classList.toggle("is-active", card === activeCard);
+  });
 }
 
 // Collega i due pulsanti freccia del carosello alla funzione sopra.
@@ -79,6 +111,26 @@ document.querySelectorAll("[data-carousel-direction]").forEach((button) => {
     scrollCarousel(Number(button.dataset.carouselDirection));
   });
 });
+
+if (carousel) {
+  let carouselTicking = false;
+
+  const syncActiveCard = () => {
+    if (carouselTicking) {
+      return;
+    }
+
+    carouselTicking = true;
+    requestAnimationFrame(() => {
+      updateActiveCarouselCard();
+      carouselTicking = false;
+    });
+  };
+
+  updateActiveCarouselCard();
+  carousel.addEventListener("scroll", syncActiveCard, { passive: true });
+  window.addEventListener("resize", syncActiveCard);
+}
 
 // Muove il bagliore arancione solo sui dispositivi che supportano l'hover.
 // Evitiamo così di far girare codice inutile su touch screen o mobile.
