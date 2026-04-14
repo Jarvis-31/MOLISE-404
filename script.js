@@ -1,6 +1,5 @@
-// Numero WhatsApp usato sia dal pulsante grande nella CTA finale
-// sia dai piccoli pulsanti presenti dentro le card prodotto.
-const WHATSAPP_NUMBER = "393296687552";
+// Link WhatsApp generico (senza numero) usato in tutta la pagina.
+const WHATSAPP_BASE_URL = "https://wa.me/";
 
 // Raccogliamo i riferimenti principali una sola volta.
 // In questo modo il codice resta più leggibile e non interroga
@@ -197,7 +196,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 document.querySelectorAll("[data-whatsapp]").forEach((button) => {
   button.addEventListener("click", () => {
     const message = button.dataset.whatsapp || "";
-    const url = `https://wa.me/${TUO_NUMERO}?text=${encodeURIComponent(message)}`;
+    const url = `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   });
 });
