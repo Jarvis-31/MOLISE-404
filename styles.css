@@ -1040,14 +1040,88 @@ body::after {
 }
 
 @media (max-width: 900px) {
+  .container {
+    padding: 0 22px;
+  }
+
+  .section {
+    padding: 96px 0;
+  }
+
+  .section-header {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  .section-desc {
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    max-width: 760px;
+    padding: 0 12px;
+  }
+
+  .hero-desc {
+    max-width: 620px;
+  }
+
+  .diceria-card,
+  .feature-card,
+  .province-card {
+    padding: 36px 28px;
+  }
+
   .dicerie-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-track {
+    gap: 20px;
+    padding: 16px 22px 36px;
+  }
+
+  .product-card {
+    flex-basis: 340px;
+  }
+
+  .features-grid,
+  .province-grid,
+  .stats-row {
+    margin-top: 52px;
+  }
+
+  .stats-row {
+    gap: 36px 44px;
+  }
+
+  .footer-inner {
+    justify-content: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   .section {
     padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-header {
+    margin-bottom: 44px;
+  }
+
+  .section-title {
+    letter-spacing: 1.2px;
+  }
+
+  .section-desc {
+    max-width: 620px;
+    font-size: 15px;
+    line-height: 1.65;
   }
 
   .nav-links {
@@ -1072,26 +1146,273 @@ body::after {
     border-bottom: 1px solid var(--border);
   }
 
+  .nav-links li,
+  .nav-links a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
   .nav-cta {
     width: 100%;
     margin-top: 4px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 136px 0 108px;
+  }
+
+  .hero h1 {
+    gap: 16px;
+    letter-spacing: 5px;
+  }
+
+  .hero-tag {
+    padding: 8px 16px;
+    letter-spacing: 2px;
+  }
+
+  .hero-sub {
+    letter-spacing: 4px;
+    margin-bottom: 28px;
+  }
+
+  .hero-desc {
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas {
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .whatsapp-btn {
+    justify-content: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: min(100%, 320px);
+    padding: 14px 24px;
+  }
+
+  .marquee-section {
+    padding: 28px 0;
+  }
+
+  .marquee-track span {
+    padding: 0 22px;
   }
 
   .features-grid,
   .province-grid {
     grid-template-columns: 1fr;
   }
+
+  .feature-card,
+  .province-card,
+  .product-info {
+    text-align: center;
+  }
+
+  .product-card {
+    flex-basis: 320px;
+  }
+
+  .product-info {
+    padding: 22px 20px 24px;
+  }
+
+  .product-bottom {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .province-grid {
+    gap: 16px;
+  }
+
+  .province-name {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .mission-big {
+    margin-bottom: 28px;
+  }
+
+  .mission-copy {
+    max-width: 640px;
+  }
+
+  .stats-row {
+    gap: 28px 36px;
+  }
+
+  .cta-title {
+    letter-spacing: 2px;
+  }
+
+  .cta-desc {
+    margin-bottom: 32px;
+  }
+
+  .whatsapp-btn {
+    width: min(100%, 340px);
+    padding: 16px 28px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-label {
+    margin-bottom: 14px;
+    letter-spacing: 2.5px;
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+    line-height: 1.08;
+  }
+
   .dicerie-grid {
     grid-template-columns: 1fr;
+  }
+
+  .diceria-card,
+  .feature-card,
+  .province-card {
+    padding: 30px 22px;
+  }
+
+  .diceria-text {
+    font-size: 18px;
+  }
+
+  .carousel-track {
+    gap: 16px;
+    padding: 12px 18px 30px;
+  }
+
+  .product-card {
+    flex-basis: calc(100vw - 36px);
+  }
+
+  .product-visual {
+    padding: 20px;
+  }
+
+  .product-visual-copy {
+    max-width: 100%;
+  }
+
+  .features-grid,
+  .province-grid,
+  .stats-row {
+    margin-top: 36px;
+  }
+
+  .stats-row {
+    gap: 24px;
+  }
+
+  .stat {
+    min-width: 132px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px 20px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+    letter-spacing: 2.2px;
+  }
+
+  .logo-badge {
+    padding: 3px 7px;
+  }
+
+  .hero {
+    padding: 124px 0 96px;
+  }
+
+  .hero h1 {
+    gap: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+  }
+
+  .hero-tag {
+    gap: 8px;
+    padding: 7px 14px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-not-found {
+    letter-spacing: 6px;
+  }
+
+  .hero-sub {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 30px;
+  }
+
+  .hero-ctas {
+    width: 100%;
+  }
+
   .product-card {
-    flex: 0 0 calc(100vw - 48px);
+    flex: 0 0 calc(100vw - 32px);
+  }
+
+  .product-info {
+    padding: 20px 18px 22px;
+  }
+
+  .product-name {
+    font-size: 17px;
   }
 
   .product-visual-copy {
@@ -1106,5 +1427,28 @@ body::after {
   .product-visual-title,
   .product-visual-note {
     font-size: 12px;
+  }
+
+  .province-name {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .mission-big {
+    font-size: clamp(22px, 7vw, 30px);
+    line-height: 1.35;
+  }
+
+  .mission-copy,
+  .cta-desc {
+    font-size: 15px;
+  }
+
+  .stat-num {
+    font-size: 40px;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
   }
 }
