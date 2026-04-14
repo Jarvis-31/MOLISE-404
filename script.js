@@ -197,7 +197,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 document.querySelectorAll("[data-whatsapp]").forEach((button) => {
   button.addEventListener("click", () => {
     const message = button.dataset.whatsapp || "";
-    const url = `https://wa.me/${IL_TUO_NUMERO}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${TUO_NUMERO}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   });
 });
